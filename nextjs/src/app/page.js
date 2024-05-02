@@ -1,5 +1,5 @@
 import React from "react";
-import {Card,Input, CardHeader, CardBody, CardFooter, Divider, Link, Image} from "@nextui-org/react";
+import {Card,Input,Button, CardHeader, CardBody, CardFooter, Divider, Link, Image} from "@nextui-org/react";
 
 export default function App() {
   return (
@@ -20,6 +20,10 @@ export default function App() {
       <CardBody>
       <Input type="email" label="Email" />
       <Input type="password" label="Password" />
+      <Button radius="full" className="bg-gradient-to-tr from-gray-500 to-black-500 text-white shadow-lg">
+      Login
+    </Button>
+
       </CardBody>
       <Divider/>
       <CardFooter>
