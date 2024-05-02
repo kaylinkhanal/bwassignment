@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.login{
+  background-color: red;
+  width: 100px;
+  padding: 5px;
+  margin: 5px;
+}
