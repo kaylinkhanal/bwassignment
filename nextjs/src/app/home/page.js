@@ -1,8 +1,15 @@
+import Footer from '@/components/footer/page'
+import CustomNavbar from '@/components/navbar/page'
+
 import React from 'react'
 
 const page = () => {
   return (
-    <div>This is home page</div>
+    <div>
+        <CustomNavbar/>
+        This is home page
+        <Footer/>
+        </div>
   )
 }
 

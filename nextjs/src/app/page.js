@@ -10,7 +10,7 @@ export default function App() {
   <div >
       <Input className="m-2" type="email" label="Email" />
       <Input className="m-2" type="password" label="Password" />
-      <Button radius="full" className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg m-2">
+      <Button as={Link} href="/home" radius="full" className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg m-2">
       Login
     </Button>
     <br/>
