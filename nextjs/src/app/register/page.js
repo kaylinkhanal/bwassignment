@@ -2,6 +2,8 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { Input } from '@nextui-org/react';
+
 
 const SignupSchema = Yup.object().shape({
   firstName: Yup.string()
@@ -29,8 +31,7 @@ const SignupForm = () => {
   return (
     <form onSubmit={formik.handleSubmit}>
       <label htmlFor="firstName">First Name</label>
-      <input
-        id="firstName"
+      <Input
         name="firstName"
         type="text"
         onChange={formik.handleChange}
@@ -38,8 +39,7 @@ const SignupForm = () => {
       />
       {formik.errors.firstName}
       <label htmlFor="lastName">Last Name</label>
-      <input
-        id="lastName"
+      <Input
         name="lastName"
         type="text"
         onChange={formik.handleChange}
@@ -47,8 +47,7 @@ const SignupForm = () => {
       />
             {formik.errors.lastName}
       <label htmlFor="email">Email Address</label>
-      <input
-        id="email"
+      <Input
         name="email"
         type="email"
         onChange={formik.handleChange}
