@@ -9,6 +9,7 @@ const page = () => {
         ['4','5','6', '-'],
         ['1','2','3', '+'],
         ['+/-','0','.', '='],
+        [ '(',')', '√x']
     ]
     const colorConfig = {
       orangeKeys:  ['C', '=' ],
@@ -24,9 +25,14 @@ const page = () => {
         setOutput('')
       }else if(keys === '='){
         const result = eval(output)
-        setOutput(result)
+        setOutput(result.toString())
       }else if(keys==='<-'){
           setOutput(removeLastChar)
+      }else if(keys == '+/-'){
+        setOutput((-output).toString())
+      }else if(keys == '√x'){
+        const sqrRoot = Math.sqrt(output)
+        setOutput(sqrRoot.toString())
       }
       else{
         const result = output[output.length -1]
@@ -63,6 +69,8 @@ const page = () => {
             </div>
            )
         })}
+
+
    
     </div>
   )
