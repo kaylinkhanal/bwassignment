@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 import { FaHeart } from "react-icons/fa";
 
 
-const page = () => {
+const Viber = () => {
     const [color, setColor] = useState('grey')
     const changeColor=()=>{
             setColor(color==='red' ? 'grey': 'red')
@@ -15,4 +15,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Viber
