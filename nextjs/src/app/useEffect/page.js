@@ -20,7 +20,6 @@ const page = () => {
     <>
        <div style={{backgroundColor:'red' ,width:60+'px', padding:10+'px'}}>
                   {lotteryWinnerNumber}
-          
           </div>
           <button className='border border-gray-500 m-2'>Stop</button>
     </>
